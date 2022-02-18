@@ -1,3 +1,4 @@
+// Chuyển đổi thập phân sang nhị phân
 Uses crt;
 Var d:array[1..20] of byte;
     i,j,n:integer;
