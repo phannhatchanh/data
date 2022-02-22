@@ -8,10 +8,18 @@ thích số học anh ta chọn mật khẩu P là một số tự nhiên và m�
   Yêu cầu: Cho một xâu kí tự S chiều dài không quá 255 kí tự. Tìm mật khẩu P đã dấu trong S.
 }
 
-
-
-
-
-
-
-
+uses crt;
+var S:string;
+    i:integer;
+    tong:longint;
+Begin
+  clrscr;
+  write('Nhap S = '); readln(S);
+  tong:=0;
+  for i:=1 to length(S) do
+    if (S[i]>'0') and (S[i]<='9') then
+    //if S[i] in ['0'..'1'] then //not working
+      tong:=tong+ORD(S[i])-48;
+      Write('Mat khau la: ',tong);
+readln;
+End.
