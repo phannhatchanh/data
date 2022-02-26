@@ -10,7 +10,7 @@ e) Phần tử có giá trị tuyệt đối lớn nhất có trong mảng. (KQ:
 }
 
 Uses Crt;
-Var N,i,Max,vt,k,m,j,d,dem:Integer;
+Var N,i,Max,vt,k,m,j,d,dem,tam:Integer;
     A: array[1..100] of Integer;
 Begin
 Clrscr;
@@ -23,6 +23,7 @@ Clrscr;
     Begin
       Write(A[i],' ');
     End;
+
   Max:=A[1];
   vt:=1;
   For i:=2 to N do
@@ -48,26 +49,24 @@ Clrscr;
       For j:=1 to A[i] do
         If A[i] mod j=0 then d:=d+1;
       If d=2 then Begin dem:=dem+1;Writeln(A[i],' '); End;
-
     End;
 
+  For i:=1 to N do
+    For j:=i+1 to N do
+      If A[i]>A[j] then
+        Begin
+          tam:=A[i];
+          A[i]:=A[j];
+          A[j]:=tam;
+        End;
+  Write('Day duoc sap xep tang dan la ');
+  For i:=1 to N do
+    Write(A[i],' ');
 
-
-
-
-
-
-
-
+  Max:=A[1];
+  For i:=1 to N do
+    If Max<A[i] then Max:=Abs(A[i]);
+  Writeln('Gia tri tuyet doi lon nhat la ',Max);
 
 Readln;
 End.
-
-
-
-
-
-
-
-
-
