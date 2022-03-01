@@ -1,4 +1,5 @@
-- srt();
+- `length(chuỗi);`
+- str();
 - delete();
 - insert();
 - length();
