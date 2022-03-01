@@ -1,3 +1,10 @@
-DATA
-<<<<<<< HEAD
-STORY abc
+srt();
+delete();
+insert();
+length();
+val();
+pos();
+chr();
+ord();
+upcase();
+truct();
