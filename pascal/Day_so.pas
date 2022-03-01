@@ -12,10 +12,26 @@ Cho số tự nhiên N.
                         26
                         3
 }
-
 uses crt;
-var 
-
+var N,K,Code,i,tong,tam:integer;
+    S:string;
+Begin
+assign(input,'bai1.inp'); reset(input);
+assign(output,'bai1.out'); rewrite(output);
+readln(N,K); //Đọc số N và số K trong file
+str(N,S); //Đổi số N sang chuỗi S để đếm
+writeln(length(S)); //Câu a
+Tong:=0;
+for i:=1 to length(S) do
+  if S[i] in ['2','4','6','8'] then
+  begin
+    val(S[i],Tam,Code);
+    Tong:=Tong+Tam;
+  end;
+  writeln(Tong); //Câu b
+  write(S[K]); //Câu c
+readln
+End.
 
 
 
