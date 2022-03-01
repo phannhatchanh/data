@@ -17,8 +17,8 @@
   ```pas
   POS('Lam','Le Thanh Lam') = 10;
   ```
-- `chr(x);` Lấy ký tự thứ X trong [bảng mã ASCII](https://vi.wikipedia.org/wiki/ASCII)
-- `ord();`
+- `chr(65);` char đổ từ số trong [bảng mã ASCII](https://vi.wikipedia.org/wiki/ASCII) sang ký tự (Ví dụ: 65 là ký tự A)
+- `ord(A);` order đổi ký tự sang chữ só trong [bảng mã ASCII](https://vi.wikipedia.org/wiki/ASCII) (Ví dụ: kí tự A là 65 trong ASCII)
 - `upcase(string);` đổi ký tự **in thường** thành kí tự **in hoa**
 
 ## Một số hàm khác
@@ -26,8 +26,3 @@
 - `sqr(x)` bình phương của một số
 - `abs(x)` trụy tuyệt đối của một số
 - `trunc(x)` Làm tròn một số thành số nguyên bằng cách loại bỏ phần thập phân của nó (hoặc `int(x)`)
-
-
-
-
-
