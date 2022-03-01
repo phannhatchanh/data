@@ -11,6 +11,27 @@ Ví dụ:
   12                 12 6 3 10 5 16 8 4 2 1
   1                  1 4 2 1
 }
+
+{Cách 1}
+uses crt;
+var N:longint;
+Begin
+  clrscr;
+  write('Nhap N = '); readln(N);
+  write(N,' ');
+  while (N<>1) do
+  begin
+    if N mod 2=0 then
+       N:=N div 2
+    else 
+       N:=N*3+1;
+    write(N,' ');
+  end;
+readln
+End.
+
+
+{Cách 2}
 uses crt;
 var N:byte;
 Begin
