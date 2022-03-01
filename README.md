@@ -25,7 +25,7 @@
 - `sqrt(x)` căn bậc hai của một số
 - `sqr(x)` bình phương của một số
 - `abs(x)` trụy tuyệt đối của một số
-- `trunc(x)` Làm tròn một số thành số nguyên bằng cách loại bỏ phần thập phân của nó
+- `trunc(x)` Làm tròn một số thành số nguyên bằng cách loại bỏ phần thập phân của nó (hoặc `int(x)`)
 
 
 
