@@ -4,9 +4,12 @@
            + ƯỚC CHUNG của 12 và 30 là: 1, 2, 3, 6
            + ƯCLN của 12 và 30 là: 6
 - Ví dụ 2: + A chia hết cho B thì ta nói: A là bội của B và B là ước của A
-           + Tìm các bội nhỏ hơn 30 của 7. Ta được 0, 7, 14, 21, 28
-           +
-           + BCNN
+           + Tìm các bội nhỏ hơn 30 của 7. Ta được 0, 7, 14, 21, 28 (thường tìm BỘI thì có giới hạn trong VD này giới hạn là 30)
+           + BỘI CHUNG của 2 số 4 và 6
+                 B(4) = 0, 4, 8, 12, 16, 20, 24,...
+                 B(6) = 0, 6, 12, 24, 30, 36, 42,...
+                 => BC(4,6) = 0, 12, 24,...
+           + BCNN (là số khác 0). Như vậy BCNN(4, 6) = 12
 }
 
 //Bài 1: Tìm ƯỚC của một số nguyên N
