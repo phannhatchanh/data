@@ -16,11 +16,7 @@
       9 7 8 6 0 3 9 2 2 1
 }
 
-{
-    Ý TƯỞNG:
-      - Đọc file
-      - Lấy từng phần tử trong dãy mod 3 (Nếu không chia hết cho 3 thì ỉn ra)
-}
+
 
 
 
