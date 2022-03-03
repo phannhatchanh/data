@@ -16,7 +16,30 @@
       9 7 8 6 0 3 9 2 2 1
 }
 
+uses crt;
+var N,i:integer;
+    fi,fo:text;
+    A:array[1..100] of integer;
+begin
+  clrscr;
+  assign(fi,'N:\tangqua.int'); reset(fi);
+  assign(fo,'N:\tangqua.out'); rewrite(fo);
+  readln(fi,N);
+  writeln(N,' phan tu:');
 
+  for i:=1 to N do
+    begin
+      read(fi,A[i]);
+      write (A[i],' ');
+    end;
+
+  writeln;
+
+  for i:=1 to N do
+    if A[i] mod 3 <> 0 then write(fo,A[i],' ');
+close(fo);
+readln
+end.
 
 
 
