@@ -1,9 +1,9 @@
 {
-- Ví dụ 1: + ƯỚC của 12 là: 1, 2, 3, 4, 6, 12 (vì 12 chia hết cho những con số đó)
+- ƯCLN     + ƯỚC của 12 là: 1, 2, 3, 4, 6, 12 (vì 12 chia hết cho những con số đó)
            + ƯỚC của 30 là: 1, 2, 3, 5, 6, 10, 15, 30 (vì 30 chia hết cho những con số đó)
            + ƯỚC CHUNG của 12 và 30 là: 1, 2, 3, 6
            + ƯCLN của 12 và 30 là: 6
-- Ví dụ 2: + A chia hết cho B thì ta nói: A là bội của B và B là ước của A
+- BCNN     + A chia hết cho B thì ta nói: A là bội của B và B là ước của A
            + Tìm các bội nhỏ hơn 30 của 7. Ta được 0, 7, 14, 21, 28 (thường tìm BỘI thì có giới hạn trong VD này giới hạn là 30)
            + BỘI CHUNG của 2 số 4 và 6
                  B(4) = 0, 4, 8, 12, 16, 20, 24,...
