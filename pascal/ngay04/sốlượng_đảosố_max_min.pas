@@ -25,15 +25,17 @@ var  N,Max,Min:String;
 begin
 clrscr;
 write('Nhap N: '); readln(N);
+Writeln(Length(N));
+
 for i:=length(N) downto 1 do
     Write(N[i]);
-Min:='9'; 
-Max:='0';
+Min:='0';
+Max:='9';
 for i:=1 to Length(N) do
   begin
-    if Max>N[i] then 
+    if Max<N[i] then
       Max:=N[i];
-    if Min<N[i] then
+    if Min>N[i] then
       Min:=N[i];
   end;
 write('So lon nhat va nho nhat: ',max,' ',min);
