@@ -1,3 +1,7 @@
+{
+  Dãy Fibonaci có quy tắc như sau: Bắt đầu bằng 0 và 1 những số tiếp theo là tổng của 2 số trước đó.
+  VÍ DỤ: 0 1 2 3 5 8 13 21 34 ...
+}
 //Dãy Fibanaci
 uses crt;
 var f1,f2,tam:integer;
