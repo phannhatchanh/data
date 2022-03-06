@@ -56,7 +56,7 @@ for i:=1 to N do
       A[j]:=tam;
     end;
 
-write('Day tan dan la: ');
+write('Day tang dan la: ');
 for i:=1 to N do write(A[i],' ');
 
 writeln;
