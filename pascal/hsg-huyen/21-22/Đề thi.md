@@ -7,5 +7,5 @@ VÍ DỤ: số 2025=(20+25)<sup>2</sup>
            a) Sắp xếp và in dãy số vừa nhập theo thứ tự tăng dần.<br />
            b) Đếm số lần của nó trong chuỗi đã nhập.<br />
            c) In ra màn hình các phần tử nhỏ hơn hoặc bằng **X**<br />
-           c) In ra màn hình các phần tử lớn hơn **X**
+           d) In ra màn hình các phần tử lớn hơn **X**
 
