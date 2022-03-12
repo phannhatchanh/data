@@ -8,6 +8,7 @@
   b) LOại Khá: 6.5<=ĐTB<8.0 và không có môn nào dưới 5<br />
   c) Loại Trung bình: 5.0<=ĐTB<6.5 và không có môn nào dưới 3.5<br />
   d) Loại Yếu là ĐTB còn lại.
-
+- Tính tổng từ 1 dến N.
+- Tính tổng 1 + 1/2 + 1/3 + 1/4 + ... + 1/N
 
 
