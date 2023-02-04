@@ -12,6 +12,7 @@ Ví dụ:
   1                  1 4 2 1
 }
 
+```pascal
 {Cách 1}
 uses crt;
 var N:longint;
@@ -29,8 +30,9 @@ Begin
   end;
 readln
 End.
+```
 
-
+```pascal
 {Cách 2}
 uses crt;
 var N:byte;
@@ -51,3 +53,4 @@ Begin
   end;
 readln;
 End.
+```
