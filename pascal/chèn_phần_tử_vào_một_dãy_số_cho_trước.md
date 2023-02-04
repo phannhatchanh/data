@@ -7,6 +7,7 @@
   chenso.out: 12 4 6 3 7 45 2 6 3 5 1
 }
 
+```pascal
 uses crt;
 var i,n,m,k: integer;
        a:array[1..100] of integer;
@@ -22,5 +23,4 @@ begin
   for i:=1 to n+1 do 
     write(a[i],' ');
 end.
-
-
+```
