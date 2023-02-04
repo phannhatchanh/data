@@ -12,7 +12,8 @@ Cho số tự nhiên N.
                         26
                         3
 }
-```
+
+```pascal
 uses crt;
 var N,K,Code,i,tong,tam:integer;
     S:string;
