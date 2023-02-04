@@ -13,7 +13,6 @@ Cho số tự nhiên N.
                         3
 }
 
-```pascal
 uses crt;
 var N,K,Code,i,tong,tam:integer;
     S:string;
@@ -34,4 +33,4 @@ for i:=1 to length(S) do
   write(S[K]); //Câu c
 readln
 End.
-```
+
