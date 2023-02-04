@@ -9,6 +9,7 @@ d) Các phần tử được sắp xếp theo thứ tự tăng dần. (KQ: -2 1 
 e) Phần tử có giá trị tuyệt đối lớn nhất có trong mảng. (KQ: 23)
 }
 
+```pascal
 Uses Crt;
 Var N,i,Max,vt,k,m,j,d,dem,tam:Integer;
     A: array[1..100] of Integer;
@@ -70,3 +71,4 @@ Clrscr;
 
 Readln;
 End.
+```
