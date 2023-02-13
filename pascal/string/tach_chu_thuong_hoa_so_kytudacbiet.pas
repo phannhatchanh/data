@@ -1,3 +1,42 @@
+program SplitChar;
+uses crt;
+var
+  inputString: string;
+  i: integer;
+
+begin
+  clrscr;
+  write('Nhap vao mot chuoi: ');
+  readln(inputString);
+
+  write('Cac ky tu chu so trong chuoi: ');
+  for i := 1 to length(inputString) do
+    if inputString[i] in ['0'..'9'] then
+      write(inputString[i]);
+
+  writeln;
+
+  write('Cac ky tu chu hoa trong chuoi: ');
+  for i := 1 to length(inputString) do
+    if inputString[i] in ['A'..'Z'] then
+      write(inputString[i]);
+
+  writeln;
+
+  write('Cac ky tu chu thuong trong chuoi: ');
+  for i := 1 to length(inputString) do
+    if inputString[i] in ['a'..'z'] then
+      write(inputString[i]);
+
+  writeln;
+
+  write('Cac ky tu dac biet trong chuoi: ');
+  for i := 1 to length(inputString) do
+    if not(inputString[i] in ['0'..'9', 'A'..'Z', 'a'..'z']) then
+      write(inputString[i]);
+readln;
+end.
+
 {
 uses crt;
 var i:integer;
@@ -28,6 +67,8 @@ for i:=1 to length(s) do
 readln
 end.
 }
+
+{
 program CountCharacters;
 uses crt;
 var
@@ -72,3 +113,4 @@ begin
   writeln('So: ', numberCount);
 readln;
 end.
+}
