@@ -4,7 +4,54 @@
 - Bài 2: Viết chương trình nhập vào một mảng số nguyên gồm n phần tử và in ra tổng các phần tử của mảng đó.
 - Bài 3: Viết chương trình nhập vào hai mảng số nguyên gồm n phần tử và tính tổng hai mảng đó. Sau đó, in ra mảng kết quả.
 - Bài 4: Viết chương trình nhập vào một mảng số nguyên gồm n phần tử và tìm số lớn thứ hai trong mảng đó.
-- Bài 5: Viết chương trình nhập vào một mảng số nguyên gồm n phần tử và đảo ngược thứ tự các phần tử trong mảng đó.
+```pascal
+{Ví dụ: Nếu bạn nhập mảng [3, 6, 8, 1, 9, 2] với số phần tử là 6,
+chương trình sẽ in ra số lớn thứ hai trong mảng là 8.}
+program tim_so_lon_thu_hai_trong_mang;
+const
+  MAX = 100;
+var
+  a: array[1..MAX] of integer;
+  n, i, temp: integer;
+begin
+  writeln('Nhap so phan tu cua mang: ');
+  readln(n);
+
+  writeln('Nhap mang: ');
+  for i := 1 to n do
+  begin
+    readln(a[i]);
+  end;
+
+  if n < 2 then
+  begin
+    writeln('Mang khong co so lon thu hai.');
+    readln;
+    exit;
+  end;
+
+  for i := 1 to n-1 do
+  begin
+    for j := i+1 to n do
+    begin
+      if a[i] < a[j] then
+      begin
+        temp := a[i];
+        a[i] := a[j];
+        a[j] := temp;
+      end;
+    end;
+  end;
+
+  writeln('So lon thu hai trong mang la: ', a[2]);
+
+  readln;
+end.
+```
+### Bài 5: Viết chương trình nhập vào một mảng số nguyên gồm n phần tử và đảo ngược thứ tự các phần tử trong mảng đó.
+```pascal
+Sử dụng for i=n downto 1 do write(array[i],' ');
+```
 - Bài 6: Viết chương trình nhập vào một mảng số nguyên gồm n phần tử và sắp xếp các phần tử trong mảng đó theo thứ tự tăng dần.
 - Bài 7: Viết chương trình nhập vào một mảng số nguyên gồm n phần tử và in ra các số nguyên tố trong mảng đó.
 
