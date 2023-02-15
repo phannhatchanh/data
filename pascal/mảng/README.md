@@ -7,9 +7,65 @@
 - Bài 5: Viết chương trình nhập vào một mảng số nguyên gồm n phần tử và đảo ngược thứ tự các phần tử trong mảng đó.
 - Bài 6: Viết chương trình nhập vào một mảng số nguyên gồm n phần tử và sắp xếp các phần tử trong mảng đó theo thứ tự tăng dần.
 - Bài 7: Viết chương trình nhập vào một mảng số nguyên gồm n phần tử và in ra các số nguyên tố trong mảng đó.
-- Bài 8: Viết chương trình nhập vào một mảng số nguyên gồm n phần tử và in ra số lần xuất hiện của mỗi phần tử trong mảng đó.
-- Bài 9: Viết chương trình nhập vào một mảng số nguyên gồm n phần tử và kiểm tra xem mảng đó có phải là một dãy tăng dần hay không.
-- Bài 10: Viết chương trình nhập vào một mảng số nguyên gồm n phần tử và kiểm tra xem mảng đó có phải là một dãy đối xứng hay không.
+
+### Bài 8: Viết chương trình nhập vào một mảng số nguyên gồm n phần tử và in ra số lần xuất hiện của mỗi phần tử trong mảng đó.
+```pascal
+{Để giải quyết bài toán này, bạn có thể sử dụng một mảng đếm để lưu trữ số lần xuất hiện của mỗi phần tử trong mảng ban đầu. Sau đó, bạn có thể duyệt qua mảng ban đầu và tăng giá trị của mảng đếm tương ứng với phần tử hiện tại. Cuối cùng, in ra mảng đếm để hiển thị số lần xuất hiện của mỗi phần tử trong mảng ban đầu. Dưới đây là đoạn code minh họa cho phương pháp này:}
+program tinh_so_lan_xuat_hien;
+const
+  MAX = 100;
+var
+  a, count: array[1..MAX] of integer;
+  n, i, j: integer;
+begin
+  writeln('Nhap so phan tu cua mang: ');
+  readln(n);
+
+  writeln('Nhap mang: ');
+  for i := 1 to n do
+  begin
+    readln(a[i]);
+  end;
+
+  for i := 1 to n do
+  begin
+    count[i] := 0;
+    for j := 1 to n do
+    begin
+      if a[j] = a[i] then
+      begin
+        count[i] := count[i] + 1;
+      end;
+    end;
+  end;
+
+  writeln('So lan xuat hien cua cac phan tu trong mang: ');
+  for i := 1 to n do
+  begin
+    if count[i] > 0 then
+    begin
+      writeln(a[i], ': ', count[i]);
+    end;
+  end;
+
+  readln;
+end.
+
+{
+Ví dụ: Nếu bạn nhập mảng [1, 2, 3, 2, 1] với số phần tử là 5, chương trình sẽ in ra:
+So lan xuat hien cua cac phan tu trong mang: 
+1: 2
+2: 2
+3: 1
+}
+```
+
+### Bài 9: Viết chương trình nhập vào một mảng số nguyên gồm n phần tử và kiểm tra xem mảng đó có phải là một dãy tăng dần hay không.
+```pascal
+
+```
+
+### Bài 10: Viết chương trình nhập vào một mảng số nguyên gồm n phần tử và kiểm tra xem mảng đó có phải là một dãy đối xứng hay không.
 ```pascal
 {Ví dụ: Nếu bạn nhập mảng [1, 2, 3, 2, 1] với số phần tử là 5, chương trình sẽ in ra thông báo "Day la mot day doi xung". Tuy nhiên, nếu bạn nhập mảng [1, 2, 3, 4, 5] với số phần tử là 5, chương trình sẽ in ra thông báo "Day khong phai la mot day doi xung".}
 program kiem_tra_day_doi_xung;
