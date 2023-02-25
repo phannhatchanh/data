@@ -16,13 +16,14 @@ uses crt;
 var t, i, j: integer;
     s: string;
     doixung: boolean;
+    fi,fo:text;
 begin
-  assign(input, 'D:\SPOW.INP'); reset(input);
-  assign(output, 'D:\SPOW.OUT'); rewrite(output);
-  readln(t);
+  assign(fi,'D:\SPOW.INP'); reset(fi);
+  assign(fo, 'D:\SPOW.OUT'); rewrite(fo);
+  readln(fi,t);
   for i := 1 to t do
   begin
-    readln(s);
+    readln(fi,s);
     doixung := true;
     for j := 1 to length(s) div 2 do
       if s[j] <> s[length(s)-j+1] then
@@ -30,9 +31,9 @@ begin
         doixung := false;
         break;
       end;
-    if doixung then writeln('YES')
-    else writeln('NO');
+    if doixung then writeln(fo,'YES')
+    else writeln(fo,'NO');
   end;
-  close(input);
-  close(output);
+  close(fi);
+  close(fo);
 end.
